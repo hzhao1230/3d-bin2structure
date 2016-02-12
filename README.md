@@ -13,9 +13,20 @@ Run RUNMAIN
 
 # Parameters 
 img_name: MAT file containing binary structure
+
 type: 0 for binary 
+
 color: 0 for dark background matrix
+
 sphere: 0 for elliptical clusters
+
 cutL: side length of square to be cut from binary image
+
 VF: volume fraction (0.01 for 1%)
-recon_length: voxel size of 3D recon
+
+recon_length: voxel side length of 3D reconstruction cube
+
+scale: coarsening ratio (e.g., 60/300 denotes to coarsen a 300X300X300 cube to side length of 60)
+
+# Output
+_output: NX7 array (N as number of clusters), with each column as X, Y, Z, long axis, short axis, Y orientation, Z orientation. 
